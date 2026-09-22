@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Example 2 -->
+     <script>
+        let a=10;
+        let b="10";
+        console.log(a==b) ;
+        console.log(a===b);
+        console.log(a+5);
+        console.log(a>5 && a<20);
+     </script>
+     <!-- block 2 ex 1 -->
+      <script>
+         let marks=75;
+         if(marks >=90) {
+            console.log("Grade A");
+         }
+         else if(marks >=60) {
+           console.log("Grade B");
+        }
+        else {
+           console.log("Grade C");
+        }
+      </script>
+      <!-- example 3 for loop -->
+       <script>
+        for(let i=1;i<=5;i++) {
+            console.log(i);
+        }
+       </script>
+
+       <!-- while loop  -->
+        <script>
+            let nums=0;
+            while(nums <=10) {
+                console.log(nums);
+                nums +=2
+            }
+        </script>
+        <!-- function declaration and expression -->
+         <script>
+            function add(a,b) {
+                return a+b;
+            }
+            console.log(add(5,3));
+         </script>
+         <!-- arrow function -->
+          <script>
+            const greet=(name="Guest") => `Hello , ${name}!`;
+
+            console.log(greet());
+            console.log(greet("Aman"));
+          </script>
+
+          <script>
+            const numbers=[1,2,3,4,5];
+            const doubled=numbers.map(n => n*2);
+            const evens = numbers.filter(n=> n%2===0);
+            const sum = numbers.reduce((total , n)=> total + n,0);
+
+            console.log(doubled);
+            console.log(evens);
+            console.log(sum);
+          </script>
+          <!-- DOM AND EVENTS -->
+           <button id="btn">Click Me </button>
+           <p id="output">HELLO !</p>
+           
+           <script>
+            document.getElementById("btn").addEventListener("click",() => {
+                document.getElementById("output").textContent="Button was clicked 😊😊";
+            });
+           </script>
+
+           <input type="text" id="nameInput" placeholder="Enter your name">
+           <p id="greet"></p>
+
+           <script>
+            const input=document.getElementById("nameInput");
+            const gree =document.getElementById("greet");
+
+            input.addEventListener("input" , () => {
+                gree.textContent = `Hello , ${input.value} !`;
+            });
+
+           </script>
+
+           <ul id="taskList">
+            <li>Sample Task 1</li>
+            <li> Sample Task 2</li>
+           </ul>
+
+           <script>
+            document.getElementById("taskList").addEventListener("click" , (e) =>
+        {
+            if(e.target.tagName==="LI") {
+                e.target.remove();
+            }
+        });
+           </script>
+    
+</body>
+</html>
