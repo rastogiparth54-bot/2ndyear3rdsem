@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+    <script>
+        document.getElementById("addBtn").addEventListener("click", () => {
+    const input = document.getElementById("taskInput");
+
+    if (input.value.trim() === "") return;
+
+    const li = document.createElement("li");
+    li.textContent = input.value;
+
+    document.getElementById("taskList").appendChild(li);
+
+    input.value = "";
+});
+    </script>
+    <!-- spread --> 
+     <script>
+        const arr1=[1,2,3];
+        const arr2=[4,5,6];
+        const combined=[...arr1 , ...arr2];
+        console.log(combined);
+
+        function sumAll(...nums) {
+            return nums.reduce((a,b) => a+b , 0) ;
+        }
+        console.log(sumAll(1,2,3,4));
+     </script>
+     
+
+
+    
+</body>
+</html>
