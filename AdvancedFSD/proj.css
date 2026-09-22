@@ -1,0 +1,168 @@
+/* Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #222;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+/* Navigation Hover */
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    margin: 35px 0 25px;
+}
+
+.heading h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.heading p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* Table Box */
+
+.table-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 650px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f7fa;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Button Hover */
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Button Click */
+
+button:active {
+    background-color: #003d80;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    width: 650px;
+    margin: 35px auto;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Logo */
+
+footer img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+/* Company Name */
+
+footer h3 {
+    margin-top: 0;
+}
+
+
+/* Location */
+
+.location {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.location:hover {
+    color: red;
+    text-decoration: underline;
+}
